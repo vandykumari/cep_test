@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Hello, {{ name }}!</h1>
-    <p>Thank you for using this interactive Flask application.</p>
-    <a href="/">Back to home</a>
+    <div class="container">
+        <h1>Hello, {{ name }}!</h1>
+        <p>Thank you for using this interactive Flask application.</p>
+        <a href="/">Back to home</a>
+    </div>
 </body>
 </html>
